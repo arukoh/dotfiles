@@ -1,0 +1,17 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'molokai'
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/unite.vim'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-rails'
+Bundle 'pangloss/vim-javascript'
+Bundle 'vim-scripts/cocoa.vim'
+
+" vim: set ft=vim:

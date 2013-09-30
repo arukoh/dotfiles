@@ -1,0 +1,13 @@
+filetype plugin on            " ファイルタイププラグインを有効にする
+filetype indent on            " ファイル形式別インデントを有効にする
+set expandtab                 " Tabをスペースに置き換える
+set tabstop=2                 " Tabが対応する空白数
+set shiftwidth=2              " 自動インデントの各段階における空白数
+set autoindent                " 新しい行の開始時にインデントを現在と同じにする
+set nobackup                  " バックアップを取らない
+set wrap                      " 画面端で折り返す
+set hidden                    " 変種中のファイルを保存しないで他ファイルを表示できるようにする
+set history=100               " コマンド・検索パターンを履歴に残す
+set nrformats=alpha,octal,hex " <C-A>,<C-X>で加減算を可能にする
+
+" vim: set ft=vim:

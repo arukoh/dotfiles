@@ -1,0 +1,37 @@
+#!/bin/bash
+have() { type "$1" &> /dev/null; }
+
+function ask() {
+  echo -n "$@" '[y/N] ' ; read ans
+  case "$ans" in
+    y*|Y*) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+
+function ii() {
+  echo -e "\n${RED}HostName:$NC" ; hostname
+  MY_IP=$(LANG=C /sbin/ifconfig eth0 | awk '/inet/ { print $2 } ' | sed -e s/addr://)
+  echo -e "\n${RED}Local IP Address:$NC" ; echo ${MY_IP:-"Not connected"}
+  echo -e "\n${RED}Kernel Info:$NC " ; uname -a
+  echo -e "\n${RED}Users logged on:$NC " ; w -h
+  echo -e "\n${RED}Current date:$NC " ; date
+  echo -e "\n${RED}Machine stats:$NC " ; uptime
+  echo -e "\n${RED}Memory stats:$NC " ; free
+  echo
+}
+
+function repeat() {
+  local i max
+  max=$1; shift;
+  for ((i=1; i <= max ; i++)); do
+    eval "$@";
+  done
+}
+
+function swap() {
+  local TMPFILE=tmp.$$
+  mv "$1" $TMPFILE
+  mv "$2" "$1"
+  mv $TMPFILE "$2"
+}

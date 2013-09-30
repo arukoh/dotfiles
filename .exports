@@ -1,0 +1,22 @@
+#!/bin/bash
+
+export GREP_OPTIONS='--color=auto'
+
+if [ -f $BASH_COMPLETION_DIR/git ]; then
+  PS1="\[${GREEN}\]\t \u@\h\[${YELLOW}\] \w\[${RED}\]\$(__git_ps1) \n\[${BLUE}\]\$\[${NC}\] "
+else
+  PS1="\[${GREEN}\]\t \u@\h$\[{YELLOW}\] \w \n\[${BLUE}\]\$\[${NC}\] "
+fi
+
+if have less; then
+  export PAGER='less'
+  unset LESSCHARSET # Fix manpages looking funky
+  export LESS='--ignore-case --line-numbers --hilite-unread  -z-4 --hilite-search --LONG-PROMPT --no-init --quit-if-one-screen --quit-on-intr --RAW-CONTROL-CHARS'
+  export LESS_TERMCAP_mb=$(printf "$RED")
+  export LESS_TERMCAP_md=$(printf "$RED")
+  export LESS_TERMCAP_me=$(printf "$NC")
+  export LESS_TERMCAP_se=$(printf "$NC")
+  export LESS_TERMCAP_so=$'\E[38;5;246m'
+  export LESS_TERMCAP_ue=$(printf "$NC")
+  export LESS_TERMCAP_us=$(printf "$GREEN")
+fi

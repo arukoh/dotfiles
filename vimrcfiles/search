@@ -1,0 +1,6 @@
+set incsearch  " インクリメンタルサーチを行う
+set hlsearch   " 検索結果をハイライトする
+set ignorecase " 大文字・小文字を区別しない
+set smartcase  " 大文字で検索した場合、大文字・小文字を区別して検索する
+
+" vim: set ft=vim:

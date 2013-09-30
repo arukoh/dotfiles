@@ -1,0 +1,6 @@
+set termencoding=utf-8 " 端末の出力に使用されるエンコーディング(グローバル)
+set encoding=utf-8     " Vim内部で使用するエンコーディング(グローバル)
+set fileencoding=utf-8 " ファイルのエンコーディング(バッファローカル)
+set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932 " Vimが表示できるエンコーディングリスト(グローバル)
+
+" vim: set ft=vim:

@@ -1,0 +1,21 @@
+set number             " 行番号を表示
+set ruler              " ルーラーを表示
+set title              " タイトルを表示
+set t_Co=256           " 色数指定(256)
+syntax on              " 強調表示ON
+colorscheme molokai    " カラースキーマを設定
+set ambiwidth=double   " ☆などの記号を正しく表示する
+set cmdheight=1        " コマンドラインに使われるスクリーン上の行数
+set showcmd            " コマンドをステータスライン(右側)に表示
+set wildmenu           " 補完候補を表示
+set laststatus=2       " ステータスラインを表示(常にステータスラインを表示)
+
+" ステータスの表示内容を設定
+" 左側：カレントファイル (カレントディレクトリ)
+" 右側：[修正フラグ][読み込み専用フラグ][ファイルタイプ][プレビューウィンドウフラグ]
+"       [エンコーディング][ファイルフォーマット][カーソルの行数, カーソルの列数]
+set statusline=%{expand('%:p:t')}\ %<\(%{expand('%:p:h')}\)%=\ %m%r%y%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}[%3l,%3c]
+set list               " 不可視文字(タブや行末)を表示する
+set listchars=tab:>>   " タブを可視化する
+
+" vim: set ft=vim:

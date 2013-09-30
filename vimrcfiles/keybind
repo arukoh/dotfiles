@@ -1,0 +1,12 @@
+" 括弧やクォート入力後に自動で左側に移動する
+inoremap {} {}<Left>
+inoremap [] []<Left>
+inoremap () ()<Left>
+inoremap "" ""<Left>
+inoremap '' ''<Left>
+inoremap <> <><Left>
+
+" 検索結果のハイライトをESC2回押しで消去する
+nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
+
+" vim: set ft=vim:

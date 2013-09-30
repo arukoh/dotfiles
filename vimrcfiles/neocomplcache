@@ -1,0 +1,17 @@
+let g:neocomplcache_enable_at_startup = 1            " 起動時に有効にする
+let g:neocomplcache_enable_smart_case = 1            " smartcaseを有効にする
+let g:neocomplcache_enable_camel_case_completion = 1 " camel caseを有効にする
+let g:neocomplcache_enable_underbar_completion = 1   " _区切りの補完を有効にする
+let g:neocomplcache_min_syntax_length = 3            " シンタックスをキャッシュするときの最小文字長を3に設定する
+
+" <C-K> にマッピング
+" imap <C-K> <Plug>(neocomplcache_snippets_expand)
+" smap <C-K> <Plug>(neocomplcache_snippets_expand)
+
+" Tabキーでオムニ補完できるようにする
+" 順方向に移動
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" 逆方向に移動
+inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<TAB>"
+
+" vim: set ft=vim:
