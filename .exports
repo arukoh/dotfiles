@@ -2,10 +2,10 @@
 
 export GREP_OPTIONS='--color=auto'
 
-if [ -f $BASH_COMPLETION_DIR/git ]; then
-  PS1="\[${GREEN}\]\t \u@\h\[${YELLOW}\] \w\[${RED}\]\$(__git_ps1) \n\[${BLUE}\]\$\[${NC}\] "
+if [ -f $BASH_COMPLETION_DIR/git ] || [ -f $BASH_COMPLETION_COMPAT_DIR/git-prompt ]; then
+  PS1="\[$GREEN\]\t \u@\h\[$YELLOW\] \w\[$RED\]\$(__git_ps1) \n\[$BLUE\]\$\[$NC\] "
 else
-  PS1="\[${GREEN}\]\t \u@\h$\[{YELLOW}\] \w \n\[${BLUE}\]\$\[${NC}\] "
+  PS1="\[$GREEN\]\t \u@\h$\[$YELLOW\] \w \n\[$BLUE\]\$\[$NC\] "
 fi
 
 if have less; then
