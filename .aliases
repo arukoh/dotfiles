@@ -10,3 +10,5 @@ alias lst='ls -hFtl --color=auto | grep $(date +%Y-%m-%d)' #ls Today
 
 alias vi='vim'
 alias view='vim -R'
+
+alias grep='grep --color=auto'
