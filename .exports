@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export BUNDLE_PATH=vendor/bundle
+
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTTIMEFORMAT='%Y-%m-%dT%T%z '
