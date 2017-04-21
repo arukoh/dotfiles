@@ -1,4 +1,4 @@
-" $B3g8L$d%/%)!<%HF~NO8e$K<+F0$G:8B&$K0\F0$9$k(B
+" 括弧やクォート入力後に自動で左側に移動する
 inoremap {} {}<Left>
 inoremap [] []<Left>
 inoremap () ()<Left>
@@ -6,7 +6,41 @@ inoremap "" ""<Left>
 inoremap '' ''<Left>
 inoremap <> <><Left>
 
-" $B8!:w7k2L$N%O%$%i%$%H$r(BESC2$B2s2!$7$G>C5n$9$k(B
+" ESCを二回押すことでハイライトを消す
 nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
+
+" 画面分割・タブ設定
+" http://qiita.com/tekkoc/items/98adcadfa4bdc8b5a6ca
+nnoremap s <Nop>              " 無効
+nnoremap sj <C-w>j            " 下のウィンドウに移動
+nnoremap sk <C-w>k            " 上のウィンドウに移動
+nnoremap sl <C-w>l            " 右のウィンドウに移動
+nnoremap sh <C-w>h            " 左のウィンドウに移動
+nnoremap sJ <C-w>J            " 下にウィンドウを移動
+nnoremap sK <C-w>K            " 上にウィンドウを移動
+nnoremap sL <C-w>L            " 右にウィンドウを移動
+nnoremap sH <C-w>H            " 左にウィンドウを移動
+nnoremap sn gt                " 次のタブに移動
+nnoremap sp gT                " 前のタブに移動
+nnoremap sr <C-w>r            " ウィンドウを回転
+nnoremap s= <C-w>=            " ウィンドウの大きさを揃える
+nnoremap sw <C-w>w            " 次のウィンドウに移動
+nnoremap so <C-w>_<C-w>|      " ウィンドウを縦横最大化
+nnoremap sO <C-w>=            " ウィンドウの大きさを揃える
+nnoremap sN :<C-u>bn<CR>      " 次のバッファに移動
+nnoremap sP :<C-u>bp<CR>      " 前のバッファに移動
+nnoremap st :<C-u>tabnew<CR>  " 新規タブ
+nnoremap ss :<C-u>sp<CR>      " 水平分割
+nnoremap sv :<C-u>vs<CR>      " 垂直分割
+nnoremap sq :<C-u>q<CR>       " ウィンドウを閉じる
+nnoremap sQ :<C-u>bd<CR>      " バッファを閉じる
+call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
+call submode#map('bufmove', 'n', '', '>', '<C-w>>')
+call submode#map('bufmove', 'n', '', '<', '<C-w><')
+call submode#map('bufmove', 'n', '', '+', '<C-w>+')
+call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 
 " vim: set ft=vim:

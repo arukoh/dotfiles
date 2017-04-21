@@ -1,17 +1,17 @@
-let g:neocomplcache_enable_at_startup = 1            " $B5/F0;~$KM-8z$K$9$k(B
-let g:neocomplcache_enable_smart_case = 1            " smartcase$B$rM-8z$K$9$k(B
-let g:neocomplcache_enable_camel_case_completion = 1 " camel case$B$rM-8z$K$9$k(B
-let g:neocomplcache_enable_underbar_completion = 1   " _$B6h@Z$j$NJd40$rM-8z$K$9$k(B
-let g:neocomplcache_min_syntax_length = 3            " $B%7%s%?%C%/%9$r%-%c%C%7%e$9$k$H$-$N:G>.J8;zD9$r(B3$B$K@_Dj$9$k(B
+let g:neocomplcache_enable_at_startup = 1            " 起動時に有効にする
+let g:neocomplcache_enable_smart_case = 1            " smartcaseを有効にする
+let g:neocomplcache_enable_camel_case_completion = 1 " camel caseを有効にする
+let g:neocomplcache_enable_underbar_completion = 1   " _区切りの補完を有効にする
+let g:neocomplcache_min_syntax_length = 3            " シンタックスをキャッシュするときの最小文字長を3に設定する
 
-" <C-K> $B$K%^%C%T%s%0(B
+" <C-K> にマッピング
 " imap <C-K> <Plug>(neocomplcache_snippets_expand)
 " smap <C-K> <Plug>(neocomplcache_snippets_expand)
 
-" Tab$B%-!<$G%*%`%KJd40$G$-$k$h$&$K$9$k(B
-" $B=gJ}8~$K0\F0(B
+" Tabキーでオムニ補完できるようにする
+" 順方向に移動
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" $B5UJ}8~$K0\F0(B
+" 逆方向に移動
 inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<TAB>"
 
 " vim: set ft=vim:

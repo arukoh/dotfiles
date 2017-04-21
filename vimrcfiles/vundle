@@ -13,5 +13,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-rails'
 Bundle 'pangloss/vim-javascript'
 Bundle 'vim-scripts/cocoa.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kana/vim-submode'
 
 " vim: set ft=vim:
