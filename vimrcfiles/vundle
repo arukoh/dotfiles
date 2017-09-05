@@ -7,6 +7,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'molokai'
 Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
 Bundle 'Shougo/unite.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-endwise'
@@ -15,5 +17,8 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'vim-scripts/cocoa.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kana/vim-submode'
+Bundle 'vim-scripts/AnsiEsc.vim'
+Bundle 'thinca/vim-quickrun'
+Bundle 'Shougo/vimproc.vim'
 
 " vim: set ft=vim:

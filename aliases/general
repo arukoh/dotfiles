@@ -12,3 +12,6 @@ alias vi='vim'
 alias view='vim -R'
 
 alias grep='grep --color=auto'
+
+alias be='bundle exec'
+alias virtualenv2='virtualenv --python=/usr/bin/python2'

@@ -1,6 +1,6 @@
---- 
-gem: --no-ri --no-rdoc
-:sources: 
+---
+gem: --no-ri --no-rdoc --user-install
+:sources:
   - https://rubygems.org/
 :backtrace: false
 :benchmark: false

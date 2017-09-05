@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export BUNDLE_PATH=vendor/bundle
+export EDITOR=vim
 
 export HISTSIZE=10000
 export HISTFILESIZE=10000
@@ -25,4 +25,21 @@ if have less; then
   export LESS_TERMCAP_so=$'\E[38;5;246m'
   export LESS_TERMCAP_ue=$(printf "$NC")
   export LESS_TERMCAP_us=$(printf "$GREEN")
+fi
+
+# ruby
+export BUNDLE_PATH=./vendor/bundle
+export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
+
+# node
+if [ -e $HOME/npm/bin ];then
+    export PATH=$HOME/npm/bin:$PATH
+fi
+
+# python
+if [ -e $HOME/.local/bin ];then
+    export PATH=$HOME/.local/bin:$PATH
+fi
+if [ -e $HOME/.pythonrc.py ];then
+    export PYTHONSTARTUP=~/.pythonrc.py
 fi
