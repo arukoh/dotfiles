@@ -12,4 +12,8 @@ set nrformats=alpha,octal,hex " <C-A>,<C-X>で加減算を可能にする
 
 autocmd BufWritePre * :%s/\s\+$//ge
 
+" カーソル位置の保存と復元
+autocmd BufWinLeave ?* silent mkview
+autocmd BufWinEnter ?* silent loadview
+
 " vim: set ft=vim:
