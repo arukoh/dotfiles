@@ -7,3 +7,5 @@ source $HOME/dotfiles/vimrcfiles/search        " 検索
 source $HOME/dotfiles/vimrcfiles/neocomplcache " プラグイン設定
 source $HOME/dotfiles/vimrcfiles/nerdtree      " プラグイン設定
 source $HOME/dotfiles/vimrcfiles/quickrun      " プラグイン設定
+source $HOME/dotfiles/vimrcfiles/syntastic     " プラグイン設定
+source $HOME/dotfiles/vimrcfiles/flake8        " プラグイン設定
