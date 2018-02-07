@@ -13,7 +13,17 @@ set nrformats=alpha,octal,hex " <C-A>,<C-X>で加減算を可能にする
 autocmd BufWritePre * :%s/\s\+$//ge
 
 " カーソル位置の保存と復元
-autocmd BufWinLeave ?* silent mkview
-autocmd BufWinEnter ?* silent loadview
+" https://ebonhand.wordpress.com/2011/03/30/automatically-save-and-load-vim-views-folds/
+set viewoptions-=options
+augroup vimrc
+    autocmd BufWritePost *
+    \   if expand('%') != '' && &buftype !~ 'nofile'
+    \|      mkview
+    \|  endif
+    autocmd BufRead *
+    \   if expand('%') != '' && &buftype !~ 'nofile'
+    \|      silent loadview
+    \|  endif
+augroup END
 
 " vim: set ft=vim:
