@@ -22,5 +22,6 @@ Bundle 'thinca/vim-quickrun'
 Bundle 'Shougo/vimproc.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'nvie/vim-flake8'
+Bundle 'davidhalter/jedi-vim'
 
 " vim: set ft=vim:
