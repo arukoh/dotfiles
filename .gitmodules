@@ -1,3 +1,34 @@
-[submodule ".vim/vundle.git"]
-	path = .vim/vundle.git
-	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule ".vim/pack/arukoh/start/vim-ruby"]
+	path = .vim/pack/arukoh/start/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby
+[submodule ".vim/pack/arukoh/start/vim-endwize"]
+	path = .vim/pack/arukoh/start/vim-endwize
+	url = https://github.com/tpope/vim-endwise
+[submodule ".vim/pack/arukoh/start/vim-rails"]
+	path = .vim/pack/arukoh/start/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule ".vim/pack/arukoh/start/vim-fugitive"]
+	path = .vim/pack/arukoh/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/pack/arukoh/start/vim-javascript"]
+	path = .vim/pack/arukoh/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule ".vim/pack/arukoh/start/AnsiEsc"]
+	path = .vim/pack/arukoh/start/AnsiEsc
+	url = https://github.com/vim-scripts/AnsiEsc.vim
+[submodule ".vim/pack/arukoh/start/vim-flake8"]
+	path = .vim/pack/arukoh/start/vim-flake8
+	url = https://github.com/nvie/vim-flake8
+[submodule ".vim/pack/arukoh/start/coc.nvim"]
+	path = .vim/pack/arukoh/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+	branch = release
+[submodule ".vim/pack/arukoh/opt/vim-submode"]
+	path = .vim/pack/arukoh/opt/vim-submode
+	url = https://github.com/kana/vim-submode
+[submodule ".vim/colors/molokai"]
+	path = .vim/colors/molokai
+	url = https://github.com/tomasr/molokai
+[submodule ".vim/pack/arukoh/start/ale"]
+	path = .vim/pack/arukoh/start/ale
+	url = https://github.com/dense-analysis/ale

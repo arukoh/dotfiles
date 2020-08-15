@@ -4,6 +4,7 @@ alias mkdir='mkdir -p'
 
 alias ls='ls -hF --color=auto'
 alias ll='ls -l'
+alias lla='ls -la'
 alias lsd='ls -dAFh --color=auto .[^.]*' # ls Dotfiles
 alias lld='lsd -l'
 alias lst='ls -hFtl --color=auto | grep $(date +%Y-%m-%d)' #ls Today

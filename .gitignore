@@ -1,2 +1,4 @@
 .vim/*
 .bash_profile.local
+node_modules
+.config/configstore/

@@ -1,9 +1,7 @@
-#!/bin/sh
-vim +BundleInstall +qa
+#!/bin/bash
 
-# for vimproc
-cd ~/dotfiles/.vim/bundle/vimproc.vim
-make
+# for ruby
+gem install rubocop solargraph
 
 # for flake8
 pip install --user flake8

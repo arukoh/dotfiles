@@ -8,7 +8,7 @@ export HISTTIMEFORMAT='%Y-%m-%dT%T%z '
 export HISTCONTROL=ignoredups
 #export HISTIGNORE=?:??:???:exit
 
-if [ -f $BASH_COMPLETION_DIR/git ] || [ -f $BASH_COMPLETION_COMPAT_DIR/git-prompt ]; then
+if [ -f /usr/share/bash-completion/bash_completion ]; then
   PS1="\[$GREEN\]\t \u@\h\[$YELLOW\] \w\[$RED\]\$(__git_ps1) \n\[$BLUE\]\$\[$NC\] "
 else
   PS1="\[$GREEN\]\t \u@\h$\[$YELLOW\] \w \n\[$BLUE\]\$\[$NC\] "
