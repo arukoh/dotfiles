@@ -1,2 +1,7 @@
 Style/FrozenStringLiteralComment:
-    Enabled: false
+  Enabled: false
+Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
