@@ -10,6 +10,10 @@ export HISTCONTROL=ignoredups
 
 if [ -f /usr/share/bash-completion/bash_completion ]; then
   PS1="\[$GREEN\]\t \u@\h\[$YELLOW\] \w\[$RED\]\$(__git_ps1) \n\[$BLUE\]\$\[$NC\] "
+  GIT_PS1_SHOWDIRTYSTATE=true
+  GIT_PS1_SHOWUNTRACKEDFILES=true
+  GIT_PS1_SHOWSTASHSTATE=true
+  GIT_PS1_SHOWUPSTREAM=auto
 else
   PS1="\[$GREEN\]\t \u@\h$\[$YELLOW\] \w \n\[$BLUE\]\$\[$NC\] "
 fi
