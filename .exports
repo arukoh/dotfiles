@@ -36,8 +36,8 @@ export BUNDLE_PATH=./vendor/bundle
 export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 
 # node
-if [ -e $HOME/npm/bin ];then
-    export PATH=$HOME/npm/bin:$PATH
+if [ -e $HOME/.npm_packages/bin ];then
+    export PATH=$HOME/.npm_packages/bin:$PATH
 fi
 
 # python

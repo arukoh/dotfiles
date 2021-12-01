@@ -2,3 +2,5 @@
 .bash_profile.local
 node_modules
 .config/configstore/
+.config/coc/memos.json
+.config/wslu/

@@ -8,7 +8,9 @@ set nobackup                  " バックアップを取らない
 set wrap                      " 画面端で折り返す
 set hidden                    " 変種中のファイルを保存しないで他ファイルを表示できるようにする
 set history=100               " コマンド・検索パターンを履歴に残す
+set modeline
 " set nrformats=alpha,octal,hex " <C-A>,<C-X>で加減算を可能にする
+set visualbell t_vb=
 
 autocmd BufWritePre * :%s/\s\+$//ge
 

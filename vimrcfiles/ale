@@ -1,5 +1,6 @@
 let g:ale_fixers = {
 \   'ruby': ['rubocop'],
+\   'python': ['autopep8', 'isort'],
 \}
 " let g:ale_fix_on_save = 1
 

@@ -1,9 +1,0 @@
-" <F7>キーにマップ（デフォルト）
-autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
-
-" 保存時に実行
-autocmd BufWritePost *.py call Flake8()
-
-" flake8の設定は ~/.config/flake8 で設定すること
-
-" vim: set ft=vim:

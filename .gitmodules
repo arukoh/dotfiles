@@ -16,9 +16,6 @@
 [submodule ".vim/pack/arukoh/start/AnsiEsc"]
 	path = .vim/pack/arukoh/start/AnsiEsc
 	url = https://github.com/vim-scripts/AnsiEsc.vim
-[submodule ".vim/pack/arukoh/start/vim-flake8"]
-	path = .vim/pack/arukoh/start/vim-flake8
-	url = https://github.com/nvie/vim-flake8
 [submodule ".vim/pack/arukoh/start/coc.nvim"]
 	path = .vim/pack/arukoh/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
