@@ -4,3 +4,4 @@ node_modules
 .config/configstore/
 .config/coc/memos.json
 .config/wslu/
+.config/gh/hosts.yml

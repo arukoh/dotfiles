@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# ボリューム含めてcompose down
+alias docker-compose-rm-with-volumes='docker compose down --volumes --remove-orphans'
+
+# ボリュームとイメージ含めてcompose down
+alias docker-compose-rm-all='docker compose down --rmi all --volumes --remove-orphans'
+
+# 起動中に対象サービスのみリビルドしてリスタート
+alias docker-compose-rebuild-and-restart="docker-compose up --no-deps --build"

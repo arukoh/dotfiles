@@ -16,10 +16,6 @@
 [submodule ".vim/pack/arukoh/start/AnsiEsc"]
 	path = .vim/pack/arukoh/start/AnsiEsc
 	url = https://github.com/vim-scripts/AnsiEsc.vim
-[submodule ".vim/pack/arukoh/start/coc.nvim"]
-	path = .vim/pack/arukoh/start/coc.nvim
-	url = https://github.com/neoclide/coc.nvim
-	branch = release
 [submodule ".vim/pack/arukoh/opt/vim-submode"]
 	path = .vim/pack/arukoh/opt/vim-submode
 	url = https://github.com/kana/vim-submode
