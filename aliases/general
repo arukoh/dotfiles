@@ -17,8 +17,3 @@ alias grep='grep --color=auto'
 alias be='bundle exec'
 alias virtualenv2='virtualenv --python=/usr/bin/python2'
 
-if [ ! -x /usr/bin/xsel ]; then
-  sudo apt-get install -y xsel
-fi
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
